@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+	android:layout_height="match_parent" tools:context=".Main">
+
+	<RadioGroup android:id="@+id/radioGroup" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:orientation="vertical">
+		<RadioButton android:id="@+id/cocktail_1" android:text="Cocktail 1"
+		    android:checked="true"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:onClick="onRadioButtonClicked" />
+		<RadioButton android:id="@+id/cocktail_2" android:text="Cocktail 2"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:onClick="onRadioButtonClicked" />
+		<RadioButton android:id="@+id/cocktail_3" android:text="Cocktail 3"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:onClick="onRadioButtonClicked" />
+	</RadioGroup>
+
+	<Button
+	    android:id="@+id/btnCocktailSel"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_centerVertical="true"
+	    android:text="Go!" />
+
+</RelativeLayout>
