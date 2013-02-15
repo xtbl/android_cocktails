@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="cocktail_details">
+        <item name="name">Cranberry Ginger Fizz</item>
+        <item name="bar">Terraza</item>Cranberry Ginger Fizz
+        <item name="price">$50</item>
+        <item name="open_bar">True</item>
+        <item name="phone">55555555</item>
+    </string-array>
+</resources>

@@ -2,6 +2,7 @@ package com.cristobal.cocktails;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.content.Intent;
 import android.util.Log;
 import android.view.Menu;
 import android.view.View;
@@ -67,6 +68,14 @@ public class Main extends Activity {
 	public void displayCocktail(View view) {
 		
 		Toast.makeText(this, "cocktail selected: " + cocktailSelec, Toast.LENGTH_SHORT).show();
+		
+		switch (cocktailSelec){
+			case 1:	startActivity(new Intent(Main.this, Cocktail.class));
+					break;
+			default: Toast.makeText(this, "choose another please ", Toast.LENGTH_SHORT).show();
+					break;
+		}
+		
 		
 	}
 	
