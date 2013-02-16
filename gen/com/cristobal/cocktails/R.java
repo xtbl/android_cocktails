@@ -10,6 +10,7 @@ package com.cristobal.cocktails;
 public final class R {
     public static final class array {
         public static final int cocktail_details=0x7f040000;
+        public static final int whiskey_sour=0x7f040001;
     }
     public static final class attr {
     }
@@ -49,6 +50,7 @@ public final class R {
         public static final int hello_world=0x7f060001;
         public static final int menu_settings=0x7f060002;
         public static final int title_cocktail_1=0x7f060003;
+        public static final int title_cocktail_2=0x7f060004;
     }
     public static final class style {
         /** 

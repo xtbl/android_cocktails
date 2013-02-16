@@ -71,7 +71,10 @@ public class Main extends Activity {
 		
 		switch (cocktailSelec){
 			case 1:	startActivity(new Intent(Main.this, Cocktail.class));
+					break;					
+			case 2:	startActivity(new Intent(Main.this, WhiskeySour.class));
 					break;
+			
 			default: Toast.makeText(this, "choose another please ", Toast.LENGTH_SHORT).show();
 					break;
 		}

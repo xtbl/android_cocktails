@@ -25,6 +25,9 @@
         <activity 
             android:name=".Cocktail"
             android:label="@string/title_cocktail_1"></activity>
+        <activity 
+            android:name=".WhiskeySour"
+            android:label="@string/title_cocktail_1"></activity>
     </application>
 
 </manifest>
