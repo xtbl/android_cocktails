@@ -20,6 +20,15 @@ public class Cocktail extends ListActivity {
 	public void onCreate(Bundle savedInstanceState){
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.cocktail); //create cocktail layout
+		// todo:
+		// receive an array with 'cocktail details' id like c_det_1...5 for the radio clicked
+		// and replace cocktail details with the name of the details
+		// and the selection part down there (only drink image/names need to be replaced)
+		
+		// get the cocktail number selected ex.2
+		// select the corresponding cocktail_details for that number: ex. cocktail_details_2 using a switch
+		// pass it to getView
+		// 
 		setListAdapter(new MyAdapter(this, 
 				android.R.layout.simple_list_item_1, R.id.textView1,
 				getResources().getStringArray(R.array.cocktail_details)));//create cocktail_details
