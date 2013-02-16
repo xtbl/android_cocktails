@@ -4,9 +4,12 @@ import java.util.List;
 
 import android.app.ListActivity;
 import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
@@ -56,6 +59,26 @@ public class Cocktail extends ListActivity {
 			}
 			else if (items[position].equals("55555555") ){
 				iv.setImageResource(R.drawable.phone);
+				iv.setOnClickListener(new OnClickListener()
+			    {
+			       @Override
+			       public void onClick(View v)
+			       {
+			    	   Intent callIntent = new Intent(Intent.ACTION_CALL);
+			    	   callIntent.setData(Uri.parse("tel:55555555"));
+			    	   startActivity(callIntent);
+			       }
+				});
+				tv.setOnClickListener(new OnClickListener()
+			    {
+			       @Override
+			       public void onClick(View v)
+			       {
+			    	   Intent callIntent = new Intent(Intent.ACTION_CALL);
+			    	   callIntent.setData(Uri.parse("tel:55555555"));
+			    	   startActivity(callIntent);
+			       }
+				});
 			}
 			
 			return row;
