@@ -62,7 +62,7 @@ public class Main extends Activity {
 	            break;
 	    }
 	    
-	    return radioSelected;
+	    return radioSelected; //delete this
 	}		
 	
 	public void displayCocktail(View view) {
