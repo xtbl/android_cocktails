@@ -25,6 +25,10 @@ public class French75 extends ListActivity {
 				getResources().getStringArray(R.array.french_75)));
 	}
 	
+	public void goBackHome(View v){
+		startActivity(new Intent(French75.this, Main.class));
+	}
+		
 	private class MyAdapter extends ArrayAdapter<String> {
 		public MyAdapter(Context context, int resource, int textViewResourceId,
 				String[] strings) {

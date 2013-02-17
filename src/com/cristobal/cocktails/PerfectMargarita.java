@@ -25,6 +25,10 @@ public class PerfectMargarita extends ListActivity {
 				getResources().getStringArray(R.array.perfect_margarita)));
 	}
 	
+	public void goBackHome(View v){
+		startActivity(new Intent(PerfectMargarita.this, Main.class));
+	}
+	
 	private class MyAdapter extends ArrayAdapter<String> {
 		public MyAdapter(Context context, int resource, int textViewResourceId,
 				String[] strings) {

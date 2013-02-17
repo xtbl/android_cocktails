@@ -25,6 +25,10 @@ public class AperolSpritz extends ListActivity {
 				getResources().getStringArray(R.array.aperol_spritz)));
 	}
 	
+	public void goBackHome(View v){
+		startActivity(new Intent(AperolSpritz.this, Main.class));
+	}
+	
 	private class MyAdapter extends ArrayAdapter<String> {
 		public MyAdapter(Context context, int resource, int textViewResourceId,
 				String[] strings) {

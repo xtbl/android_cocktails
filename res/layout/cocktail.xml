@@ -1,9 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	android:orientation="vertical" android:layout_width="fill_parent"
+	android:background="@color/bg_color"
+	android:text="@color/bg_color"
 	android:layout_height="fill_parent">
 
-	<ListView android:id="@android:id/list" android:layout_width="match_parent"
-		android:layout_height="match_parent" />
 
-</RelativeLayout>
+	<ImageView
+	    android:id="@+id/backImage"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:onClick="goBackHome"
+	    android:src="@drawable/back_button" />
+	<ListView
+	    android:id="@android:id/list"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+ 	>
+	</ListView>
+
+
+
+</LinearLayout>

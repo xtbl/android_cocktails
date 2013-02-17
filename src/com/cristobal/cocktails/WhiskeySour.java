@@ -27,6 +27,10 @@ public class WhiskeySour extends ListActivity {
 				getResources().getStringArray(R.array.whiskey_sour)));
 	}
 	
+	public void goBackHome(View v){
+		startActivity(new Intent(WhiskeySour.this, Main.class));
+	}
+		
 	private class MyAdapter extends ArrayAdapter<String> {
 		public MyAdapter(Context context, int resource, int textViewResourceId,
 				String[] strings) {

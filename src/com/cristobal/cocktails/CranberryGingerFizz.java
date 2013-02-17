@@ -23,7 +23,9 @@ public class CranberryGingerFizz extends ListActivity {
 				android.R.layout.simple_list_item_1, R.id.textView1,
 				getResources().getStringArray(R.array.cranberry_ginger_fizz)));//create cocktail_details
 	}
-	
+	public void goBackHome(View v){
+		startActivity(new Intent(CranberryGingerFizz.this, Main.class));
+	}
 	private class MyAdapter extends ArrayAdapter<String> {
 
 		public MyAdapter(Context context, int resource, int textViewResourceId,

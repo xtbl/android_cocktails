@@ -17,8 +17,13 @@
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
         android:layout_marginTop="@dimen/list_txt_margin_top"
+        android:paddingLeft="@dimen/list_txt_margin_left"
         android:text="TextView"
-        android:textSize="@dimen/list_txt_size" />
+        android:textColor="@color/txt_color"
+        android:textSize="@dimen/txt_size_std"
+        android:textStyle="bold"
+        android:typeface="serif" />
 
 </LinearLayout>

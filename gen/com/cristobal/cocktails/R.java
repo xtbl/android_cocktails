@@ -31,23 +31,25 @@ public final class R {
     }
     public static final class drawable {
         public static final int aperol_spritz=0x7f020000;
-        public static final int bar=0x7f020001;
-        public static final int bar_old=0x7f020002;
-        public static final int cranberry_ginger_fizz=0x7f020003;
-        public static final int french_75=0x7f020004;
-        public static final int ic_launcher=0x7f020005;
-        public static final int main_header=0x7f020006;
-        public static final int name=0x7f020007;
-        public static final int open_bar=0x7f020008;
-        public static final int open_bar_old=0x7f020009;
-        public static final int perfect_margarita=0x7f02000a;
-        public static final int phone=0x7f02000b;
-        public static final int phone_old=0x7f02000c;
-        public static final int price=0x7f02000d;
-        public static final int price_old=0x7f02000e;
-        public static final int whiskey_sour=0x7f02000f;
+        public static final int back_button=0x7f020001;
+        public static final int bar=0x7f020002;
+        public static final int bar_old=0x7f020003;
+        public static final int cranberry_ginger_fizz=0x7f020004;
+        public static final int french_75=0x7f020005;
+        public static final int ic_launcher=0x7f020006;
+        public static final int main_header=0x7f020007;
+        public static final int name=0x7f020008;
+        public static final int open_bar=0x7f020009;
+        public static final int open_bar_old=0x7f02000a;
+        public static final int perfect_margarita=0x7f02000b;
+        public static final int phone=0x7f02000c;
+        public static final int phone_old=0x7f02000d;
+        public static final int price=0x7f02000e;
+        public static final int price_old=0x7f02000f;
+        public static final int whiskey_sour=0x7f020010;
     }
     public static final class id {
+        public static final int backImage=0x7f0a0008;
         public static final int btnCocktailSel=0x7f0a0007;
         public static final int cocktail_1=0x7f0a0002;
         public static final int cocktail_2=0x7f0a0003;
@@ -55,9 +57,9 @@ public final class R {
         public static final int cocktail_4=0x7f0a0005;
         public static final int cocktail_5=0x7f0a0006;
         public static final int imageView1=0x7f0a0000;
-        public static final int menu_settings=0x7f0a0009;
+        public static final int menu_settings=0x7f0a000a;
         public static final int radioGroup=0x7f0a0001;
-        public static final int textView1=0x7f0a0008;
+        public static final int textView1=0x7f0a0009;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
