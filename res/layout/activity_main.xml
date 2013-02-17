@@ -1,35 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+	android:background="@color/bg_color"
+	android:text="@color/bg_color"
 	android:layout_height="match_parent" tools:context=".Main">
 
-	<RadioGroup android:id="@+id/radioGroup" android:layout_width="wrap_content"
-		android:layout_height="wrap_content" android:orientation="vertical">
-		<RadioButton android:id="@+id/cocktail_1" android:text="@string/title_cocktail_1"
-		    android:checked="true"
-			android:layout_width="wrap_content" android:layout_height="wrap_content"
-			android:onClick="onRadioButtonClicked" />
-		<RadioButton android:id="@+id/cocktail_2" android:text="@string/title_cocktail_2"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:onClick="onRadioButtonClicked" />
-		<RadioButton android:id="@+id/cocktail_3" android:text="@string/title_cocktail_3"
-			android:layout_width="wrap_content" android:layout_height="wrap_content"
-			android:onClick="onRadioButtonClicked" />
-		<RadioButton android:id="@+id/cocktail_4" android:text="@string/title_cocktail_4"
-			android:layout_width="wrap_content" android:layout_height="wrap_content"
-			android:onClick="onRadioButtonClicked" />
-		<RadioButton android:id="@+id/cocktail_5" android:text="@string/title_cocktail_5"
-			android:layout_width="wrap_content" android:layout_height="wrap_content"
-			android:onClick="onRadioButtonClicked" />
+	<ImageView
+	    android:id="@+id/imageView1"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignParentTop="true"
+	    android:src="@drawable/main_header" />
+
+	<RadioGroup
+	    android:id="@+id/radioGroup"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_centerVertical="true"
+	    android:orientation="vertical" >
+
+	    <RadioButton
+	        android:id="@+id/cocktail_1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:checked="true"
+	        android:onClick="onRadioButtonClicked"
+	        android:text="@string/title_cocktail_1"
+	        android:textColor="@color/txt_color"
+	        android:textSize="@dimen/txt_size_std"
+	        android:textStyle="bold"
+	        android:typeface="serif" />
+
+	    <RadioButton
+	        android:id="@+id/cocktail_2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:onClick="onRadioButtonClicked"
+	        android:text="@string/title_cocktail_2"
+	        android:textColor="@color/txt_color"
+	        android:textSize="@dimen/txt_size_std"
+	        android:textStyle="bold"
+	        android:typeface="serif" />
+
+	    <RadioButton
+	        android:id="@+id/cocktail_3"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:onClick="onRadioButtonClicked"
+	        android:text="@string/title_cocktail_3"
+	        android:textColor="@color/txt_color"
+	        android:textSize="@dimen/txt_size_std"
+	        android:textStyle="bold"
+	        android:typeface="serif" />
+
+	    <RadioButton
+	        android:id="@+id/cocktail_4"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:onClick="onRadioButtonClicked"
+	        android:text="@string/title_cocktail_4"
+	        android:textColor="@color/txt_color"
+	        android:textSize="@dimen/txt_size_std"
+	        android:textStyle="bold"
+	        android:typeface="serif" />
+
+	    <RadioButton
+	        android:id="@+id/cocktail_5"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:onClick="onRadioButtonClicked"
+	        android:text="@string/title_cocktail_5"
+	        android:textColor="@color/txt_color"
+	        android:textSize="@dimen/txt_size_std"
+	        android:textStyle="bold"
+	        android:typeface="serif" />
+
 	</RadioGroup>
 
 	<Button
 	    android:id="@+id/btnCocktailSel"
 	    android:layout_width="match_parent"
 	    android:layout_height="wrap_content"
-	    android:layout_centerVertical="true"
-	    android:text="Go!" 
-	    android:onClick="displayCocktail"/>
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@+id/radioGroup"
+	    android:layout_marginTop="30dp"
+	    android:background="@color/txt_highlight_color"
+	    android:onClick="displayCocktail"
+	    android:text="Go!"
+	    android:textSize="@dimen/txt_size_std"
+	    android:textStyle="bold"
+	    android:typeface="serif" />
 
 </RelativeLayout>

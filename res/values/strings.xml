@@ -9,5 +9,9 @@
     <string name="title_cocktail_3">Aperol Spritz</string>
     <string name="title_cocktail_4">Perfect Margarita</string>
     <string name="title_cocktail_5">French 75</string>
-
+	
+	<color name="bg_color">#000000</color>
+	<color name="txt_color">#fffcfc</color>
+	<color name="txt_highlight_color">#f9912f</color>
+    
 </resources>

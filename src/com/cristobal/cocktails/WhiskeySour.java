@@ -1,7 +1,5 @@
 package com.cristobal.cocktails;
 
-import java.util.List;
-
 import android.app.ListActivity;
 import android.content.Context;
 import android.content.Intent;
@@ -46,10 +44,6 @@ public class WhiskeySour extends ListActivity {
 			TextView tv = (TextView) row.findViewById(R.id.textView1);
 			
 			tv.setText(items[position]);
-			// testing-delete
-			Log.v(TAG, "item-position is: "+ items[position]);
-			Log.v(TAG, "item-0 is: "+ items[0]);
-			Log.v(TAG, "item-1 is: "+ items[1]);
 			
 			if (position == 0){
 				iv.setImageResource(R.drawable.whiskey_sour);
