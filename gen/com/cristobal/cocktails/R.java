@@ -10,11 +10,10 @@ package com.cristobal.cocktails;
 public final class R {
     public static final class array {
         public static final int aperol_spritz=0x7f040000;
-        public static final int cocktail_details=0x7f040001;
-        public static final int cranberry_ginger_fizz=0x7f040002;
-        public static final int french_75=0x7f040003;
-        public static final int perfect_margarita=0x7f040004;
-        public static final int whiskey_sour=0x7f040005;
+        public static final int cranberry_ginger_fizz=0x7f040001;
+        public static final int french_75=0x7f040002;
+        public static final int perfect_margarita=0x7f040003;
+        public static final int whiskey_sour=0x7f040004;
     }
     public static final class attr {
     }
@@ -24,9 +23,11 @@ public final class R {
         public static final int txt_highlight_color=0x7f070002;
     }
     public static final class dimen {
+        public static final int list_img_size=0x7f050005;
         public static final int list_txt_margin_left=0x7f050002;
         public static final int list_txt_margin_top=0x7f050001;
         public static final int list_txt_size=0x7f050000;
+        public static final int txt_size_big=0x7f050004;
         public static final int txt_size_std=0x7f050003;
     }
     public static final class drawable {
