@@ -25,7 +25,7 @@ public class Main extends Activity {
 	}
 
 	public void onRadioButtonClicked(View view) {
-	    // Is the button now checked?
+
 	    boolean checked = ((RadioButton) view).isChecked();
     
 	    // Check which radio button was clicked
@@ -34,38 +34,31 @@ public class Main extends Activity {
 	            if (checked)
 	            	Log.v(TAG, "cocktail_1");
 	            	cocktailSelec = 1;
-	            	Toast.makeText(this, "cocktail_1", Toast.LENGTH_SHORT).show();
 	            break;
 	        case R.id.cocktail_2:
 	            if (checked)
 	            	Log.v(TAG, "cocktail_2");
 	            	cocktailSelec = 2;
-	            	Toast.makeText(this, "cocktail_2", Toast.LENGTH_SHORT).show();
 	            break;
 	        case R.id.cocktail_3:
 	        	if (checked)
 	        		cocktailSelec = 3;
-	        		Toast.makeText(this, "cocktail_3", Toast.LENGTH_SHORT).show();
 	        	break;
 	        case R.id.cocktail_4:
 	        	if (checked)
 	        		cocktailSelec = 4;
 	        		Log.v(TAG, "cocktail_4");
-		        	Toast.makeText(this, "cocktail_4", Toast.LENGTH_SHORT).show();
 	        	break;
 	        case R.id.cocktail_5:
 	        	if (checked)
 	        		cocktailSelec = 5;
 	        		Log.v(TAG, "cocktail_5");
-		        	Toast.makeText(this, "cocktail_5", Toast.LENGTH_SHORT).show();
 	        	break;
 	    }
 	    
 	}		
 	
 	public void displayCocktail(View view) {
-		
-		Toast.makeText(this, "cocktail selected: " + cocktailSelec, Toast.LENGTH_SHORT).show();
 		
 		switch (cocktailSelec){
 			case 1:	startActivity(new Intent(Main.this, CranberryGingerFizz.class));

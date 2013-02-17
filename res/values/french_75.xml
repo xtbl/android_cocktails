@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="french_75">
-        <item name="name">Perfect Margarita</item>
+        <item name="name">French 75</item>
         <item name="bar">Dance Floor Area</item>
         <item name="price">$45</item>
         <item name="open_bar">Yes!</item>
