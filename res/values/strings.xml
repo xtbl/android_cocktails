@@ -6,5 +6,8 @@
     <string name="menu_settings">Settings</string>
     <string name="title_cocktail_1">Cranberry Ginger Fizz</string>
     <string name="title_cocktail_2">Whiskey Sour</string>
+    <string name="title_cocktail_3">Aperol Spritz</string>
+    <string name="title_cocktail_4">Perfect Margarita</string>
+    <string name="title_cocktail_5">French 75</string>
 
 </resources>

@@ -20,32 +20,14 @@ public class Main extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main);
-		
-		Button btn = (Button) findViewById(R.id.btnCocktailSel);
-		RadioGroup radGroup = (RadioGroup) findViewById(R.id.radioGroup);
-		int checkRadioId = radGroup.getCheckedRadioButtonId();
-				
-
-/*		
-		btn.setOnClickListener( new OnClickListener() {
-		
-			@Override
-			public void onClick(View v) {
-				// TODO Auto-generated method stub
-				
-			}
-		});
-*/	
+		setContentView(R.layout.activity_main);			
 		
 	}
 
-	public int onRadioButtonClicked(View view) {
+	public void onRadioButtonClicked(View view) {
 	    // Is the button now checked?
 	    boolean checked = ((RadioButton) view).isChecked();
-	    //default radio button selected
-	    int radioSelected = 1;
-	    
+    
 	    // Check which radio button was clicked
 	    switch(view.getId()) {
 	        case R.id.cocktail_1:
@@ -60,9 +42,25 @@ public class Main extends Activity {
 	            	cocktailSelec = 2;
 	            	Toast.makeText(this, "cocktail_2", Toast.LENGTH_SHORT).show();
 	            break;
+	        case R.id.cocktail_3:
+	        	if (checked)
+	        		cocktailSelec = 3;
+	        		Toast.makeText(this, "cocktail_3", Toast.LENGTH_SHORT).show();
+	        	break;
+	        case R.id.cocktail_4:
+	        	if (checked)
+	        		cocktailSelec = 4;
+	        		Log.v(TAG, "cocktail_4");
+		        	Toast.makeText(this, "cocktail_4", Toast.LENGTH_SHORT).show();
+	        	break;
+	        case R.id.cocktail_5:
+	        	if (checked)
+	        		cocktailSelec = 5;
+	        		Log.v(TAG, "cocktail_5");
+		        	Toast.makeText(this, "cocktail_5", Toast.LENGTH_SHORT).show();
+	        	break;
 	    }
 	    
-	    return radioSelected; //delete this
 	}		
 	
 	public void displayCocktail(View view) {
@@ -70,9 +68,15 @@ public class Main extends Activity {
 		Toast.makeText(this, "cocktail selected: " + cocktailSelec, Toast.LENGTH_SHORT).show();
 		
 		switch (cocktailSelec){
-			case 1:	startActivity(new Intent(Main.this, Cocktail.class));
+			case 1:	startActivity(new Intent(Main.this, CranberryGingerFizz.class));
 					break;					
 			case 2:	startActivity(new Intent(Main.this, WhiskeySour.class));
+					break;
+			case 3:	startActivity(new Intent(Main.this, AperolSpritz.class));
+					break;
+			case 4:	startActivity(new Intent(Main.this, PerfectMargarita.class));
+					break;
+			case 5:	startActivity(new Intent(Main.this, French75.class));
 					break;
 			
 			default: Toast.makeText(this, "choose another please ", Toast.LENGTH_SHORT).show();

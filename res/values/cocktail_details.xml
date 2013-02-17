@@ -2,7 +2,7 @@
 <resources>
     <string-array name="cocktail_details">
         <item name="name">Cranberry Ginger Fizz</item>
-        <item name="bar">Terraza</item>
+        <item name="bar">Terraza Bar Area</item>
         <item name="price">$50</item>
         <item name="open_bar">Yes!</item>
         <item name="phone">55555555</item>

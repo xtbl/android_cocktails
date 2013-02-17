@@ -5,15 +5,21 @@
 
 	<RadioGroup android:id="@+id/radioGroup" android:layout_width="wrap_content"
 		android:layout_height="wrap_content" android:orientation="vertical">
-		<RadioButton android:id="@+id/cocktail_1" android:text="Craberry Ginger Fizz"
+		<RadioButton android:id="@+id/cocktail_1" android:text="@string/title_cocktail_1"
 		    android:checked="true"
 			android:layout_width="wrap_content" android:layout_height="wrap_content"
 			android:onClick="onRadioButtonClicked" />
-		<RadioButton android:id="@+id/cocktail_2" android:text="Whiskey Sour"
+		<RadioButton android:id="@+id/cocktail_2" android:text="@string/title_cocktail_2"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:onClick="onRadioButtonClicked" />
-		<RadioButton android:id="@+id/cocktail_3" android:text="Cocktail 3"
+		<RadioButton android:id="@+id/cocktail_3" android:text="@string/title_cocktail_3"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:onClick="onRadioButtonClicked" />
+		<RadioButton android:id="@+id/cocktail_4" android:text="@string/title_cocktail_4"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:onClick="onRadioButtonClicked" />
+		<RadioButton android:id="@+id/cocktail_5" android:text="@string/title_cocktail_5"
 			android:layout_width="wrap_content" android:layout_height="wrap_content"
 			android:onClick="onRadioButtonClicked" />
 	</RadioGroup>

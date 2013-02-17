@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="aperol_spritz">
+        <item name="name">Aperol Spritz</item>
+        <item name="bar">Pool Bar Area</item>
+        <item name="price">$40</item>
+        <item name="open_bar">Yes!</item>
+        <item name="phone">55555555</item>
+    </string-array>
+</resources>

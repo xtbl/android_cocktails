@@ -2,7 +2,7 @@
 <resources>
     <string-array name="whiskey_sour">
         <item name="name">Whiskey Sour</item>
-        <item name="bar">Main Bar</item>
+        <item name="bar">Lounge Area</item>
         <item name="price">$30</item>
         <item name="open_bar">Yes!</item>
         <item name="phone">55555555</item>

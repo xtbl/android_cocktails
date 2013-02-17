@@ -7,6 +7,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -16,10 +17,12 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class WhiskeySour extends ListActivity {
+	private final String TAG = this.getClass().getSimpleName();
+	
 	@Override
 	public void onCreate(Bundle savedInstanceState){
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.cocktail); //create cocktail layout
+		setContentView(R.layout.cocktail);
 
 		setListAdapter(new MyAdapter(this, 
 				android.R.layout.simple_list_item_1, R.id.textView1,
@@ -27,11 +30,9 @@ public class WhiskeySour extends ListActivity {
 	}
 	
 	private class MyAdapter extends ArrayAdapter<String> {
-
 		public MyAdapter(Context context, int resource, int textViewResourceId,
 				String[] strings) {
 			super(context, resource, textViewResourceId, strings);
-			// TODO Auto-generated constructor stub
 		}
 		
 		@Override
@@ -45,20 +46,24 @@ public class WhiskeySour extends ListActivity {
 			TextView tv = (TextView) row.findViewById(R.id.textView1);
 			
 			tv.setText(items[position]);
+			// testing-delete
+			Log.v(TAG, "item-position is: "+ items[position]);
+			Log.v(TAG, "item-0 is: "+ items[0]);
+			Log.v(TAG, "item-1 is: "+ items[1]);
 			
-			if (items[position].equals("Whiskey Sour") ){
-				iv.setImageResource(R.drawable.name);
+			if (position == 0){
+				iv.setImageResource(R.drawable.whiskey_sour);
 			}
-			else if (items[position].equals("Main Bar") ){
+			else if ( position == 1 ){
 				iv.setImageResource(R.drawable.bar);
 			}
-			else if (items[position].equals("$30") ){
+			else if ( position == 2 ) {
 				iv.setImageResource(R.drawable.price);
 			}
-			else if (items[position].equals("Yes!") ){
+			else if ( position == 3 ) {
 				iv.setImageResource(R.drawable.open_bar);
 			}
-			else if (items[position].equals("55555555") ){
+			else if ( position == 4 ){
 				iv.setImageResource(R.drawable.phone);
 				iv.setOnClickListener(new OnClickListener()
 			    {
